@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="184dp"
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="135dp"
+        android:background="@drawable/song"
+
+        app:srcCompat="@drawable/song" />
+
+
+    <SeekBar
+        android:id="@+id/positionBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="581dp"
+        android:layout_marginRight="67dp" />
+
+    <TextView
+        android:id="@+id/elapsedTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="587dp"
+        android:layout_marginRight="377dp"
+        android:text="0:11" />
+
+    <TextView
+        android:id="@+id/remainingTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="347dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="582dp"
+        android:layout_marginRight="33dp"
+        android:text="-1:49" />
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="626dp"
+        android:layout_marginRight="190dp"
+        android:background="@drawable/play"
+        android:onClick="playBtnClick" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="311dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/sound" />
+
+    <SeekBar
+        android:id="@+id/volumeBar"
+
+        android:layout_width="145dp"
+        android:layout_height="209dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginRight="-73dp"
+        android:max="100"
+        android:progress="50"
+        android:rotation="270" />
+
+    <ImageView
+        android:layout_width="52dp"
+        android:layout_height="26dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="43dp"
+        android:src="@drawable/sound2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="286dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginRight="81dp"
+        android:fontFamily="@font/archivo_narrow"
+        android:text=" Mile Ho Tum Humko Bade Naseebo Se "
+        android:textAlignment="center"
+        android:textColor="#FFC400"
+        android:textColorHighlight="#00E676"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
